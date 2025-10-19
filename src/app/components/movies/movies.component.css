@@ -1,12 +1,12 @@
 section {
-    background-color: #3e3939;
-    color: white;
-    font-family: 'BrowalliaUPC';
+  background-color: #3e3939;
+  color: white;
+  font-family: "BrowalliaUPC";
 }
 
 .movie-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0px;
-    padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0px;
+  padding: 10px;
 }

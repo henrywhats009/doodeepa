@@ -5,10 +5,8 @@ import { MoviesService } from '../../services/movies.service';
   selector: 'app-movies',
   standalone: false,
   templateUrl: './movies.component.html',
-  styleUrl: './movies.component.css'
+  styleUrl: './movies.component.css',
 })
 export class MoviesComponent {
-  constructor(
-    public MoviesService: MoviesService
-  ){}
+  constructor(public MoviesService: MoviesService) {}
 }
