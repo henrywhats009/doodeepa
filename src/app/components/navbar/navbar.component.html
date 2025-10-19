@@ -1,42 +1,74 @@
-<nav class="navbar navbar-expand-lg" [ngClass]="{'hidden-navbar': isHidden}">
-    <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/home">
-            <img src="assets/logo/logo.png" alt="Logo" height="60">
-        </a>
+<nav class="navbar navbar-expand-lg" [ngClass]="{ 'hidden-navbar': isHidden }">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">
+      <img src="assets/logo/logo.png" alt="Logo" height="60" />
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="rankingDropdown" role="button"
-                        data-bs-toggle="dropdown">
-                        จัดอันดับหนัง
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" routerLink="/top-rated">ยอดนิยม</a></li>
-                        <li><a class="dropdown-item" routerLink="/most-watched">มีคนดูเยอะ</a></li>
-                        <li><a class="dropdown-item" routerLink="/critics-choice">นักวิจารณ์แนะนำ</a></li>
-                    </ul>
-                </li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="rankingDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            จัดอันดับหนัง
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" routerLink="/top-rated">ยอดนิยม</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/most-watched">มีคนดูเยอะ</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/critics-choice"
+                >นักวิจารณ์แนะนำ</a
+              >
+            </li>
+          </ul>
+        </li>
 
-                <li class="nav-item">
-                    <div class="nav-search-container">
-                        <form class="d-flex nav-search">
-                            <i class="pi pi-search search-icon"></i>
-                            <input class="form-control me-2 search-input" type="search" placeholder="ค้นหาภาพยนตร์...">
-                        </form>
-                    </div>
-                </li>
+        <li class="nav-item">
+          <div class="nav-search-container">
+            <form class="d-flex nav-search">
+              <i class="pi pi-search search-icon"></i>
+              <input
+                class="form-control me-2 search-input"
+                type="search"
+                placeholder="ค้นหาภาพยนตร์..."
+              />
+            </form>
+          </div>
+        </li>
 
-                <li class="nav-item"><a class="nav-link" routerLink="/movies">ภาพยนตร์</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/tv-shows">รายการโทรทัศน์</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/random-movies">สุ่มภาพยนตร์</a></li>
-            </ul>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/movies">ภาพยนตร์</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tv-shows">รายการโทรทัศน์</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/random-movies">สุ่มภาพยนตร์</a>
+        </li>
+      </ul>
 
-            <i class="pi pi-user ms-auto" style="color: white; font-size: 2rem" routerLink="/profile"></i>
-        </div>
+      <i
+        class="pi pi-user ms-auto"
+        style="color: white; font-size: 2rem"
+        routerLink="/profile"
+      ></i>
     </div>
+  </div>
 </nav>
