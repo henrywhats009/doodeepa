@@ -27,6 +27,7 @@
     "express": "^4.21.2",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
+    "prettier": "^3.6.2",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
     "primeng": "^19.1.4",

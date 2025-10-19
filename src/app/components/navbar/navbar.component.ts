@@ -12,7 +12,8 @@ export class NavbarComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const currentScroll =
+      window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > this.lastScrollTop) {
       // ถ้าเลื่อนลง ให้ซ่อน navbar

@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { MoviesService } from '../../services/movies.service';
-import { Movies } from '../../interfaces/movies';
 
 @Component({
   selector: 'app-movie-detail',
   standalone: false,
   templateUrl: './movie-detail.component.html',
-  styleUrls: ['./movie-detail.component.css']
+  styleUrls: ['./movie-detail.component.css'],
 })
 export class MovieDetailComponent {
   constructor(
@@ -19,6 +18,3 @@ export class MovieDetailComponent {
     const movieId = Number(this.route.snapshot.paramMap.get('id'));
   }
 }
-
-
-

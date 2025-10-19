@@ -1,63 +1,78 @@
 <section>
-    <div class="mb-5">
-        <div class="movie-header">
-            <h1 style="font-weight: bold; margin-left: 2%;">ภาพยนตร์</h1>
-            <h2 style="font-weight: bold; margin-left: 50px;">ตลก</h2>
-        </div>
-        <div class="movie-container">
-            <app-movies-card *ngFor="
-                  let movies of MoviesService.comedyMovies;
-                  let i = index;
-                  let last = last
-                " [movies]="movies"></app-movies-card>
-        </div>
+  <div class="mb-5">
+    <div class="movie-header">
+      <h1 style="font-weight: bold; margin-left: 2%">ภาพยนตร์</h1>
+      <h2 style="font-weight: bold; margin-left: 50px">ตลก</h2>
     </div>
-    <div class="mb-5">
-        <div class="movie-header">
-            <h2 style="font-weight: bold; margin-left: 50px;">ดราม่า</h2>
-        </div>
-        <div class="movie-container">
-            <app-movies-card *ngFor="
-                  let movies of MoviesService.dramaMovies;
-                  let i = index;
-                  let last = last
-                " [movies]="movies"></app-movies-card>
-        </div>
+    <div class="movie-container">
+      <app-movies-card
+        *ngFor="
+          let movies of MoviesService.comedyMovies;
+          let i = index;
+          let last = last
+        "
+        [movies]="movies"
+      ></app-movies-card>
     </div>
-    <div class="mb-5">
-        <div class="movie-header">
-            <h2 style="font-weight: bold; margin-left: 50px;">สยองขวัญ</h2>
-        </div>
-        <div class="movie-container">
-            <app-movies-card *ngFor="
-                  let movies of MoviesService.horrorMovies;
-                  let i = index;
-                  let last = last
-                " [movies]="movies"></app-movies-card>
-        </div>
+  </div>
+  <div class="mb-5">
+    <div class="movie-header">
+      <h2 style="font-weight: bold; margin-left: 50px">ดราม่า</h2>
     </div>
-    <div class="mb-5">
-        <div class="movie-header">
-            <h2 style="font-weight: bold; margin-left: 50px;">แอ็คชั่น</h2>
-        </div>
-        <div class="movie-container">
-            <app-movies-card *ngFor="
-                  let movies of MoviesService.actionMovies;
-                  let i = index;
-                  let last = last
-                " [movies]="movies"></app-movies-card>
-        </div>
+    <div class="movie-container">
+      <app-movies-card
+        *ngFor="
+          let movies of MoviesService.dramaMovies;
+          let i = index;
+          let last = last
+        "
+        [movies]="movies"
+      ></app-movies-card>
     </div>
-    <div class="mb-5">
-        <div class="movie-header">
-            <h2 style="font-weight: bold; margin-left: 50px;">อนิเมะ</h2>
-        </div>
-        <div class="movie-container">
-            <app-movies-card *ngFor="
-                  let movies of MoviesService.animeMovies;
-                  let i = index;
-                  let last = last
-                " [movies]="movies"></app-movies-card>
-        </div>
+  </div>
+  <div class="mb-5">
+    <div class="movie-header">
+      <h2 style="font-weight: bold; margin-left: 50px">สยองขวัญ</h2>
     </div>
+    <div class="movie-container">
+      <app-movies-card
+        *ngFor="
+          let movies of MoviesService.horrorMovies;
+          let i = index;
+          let last = last
+        "
+        [movies]="movies"
+      ></app-movies-card>
+    </div>
+  </div>
+  <div class="mb-5">
+    <div class="movie-header">
+      <h2 style="font-weight: bold; margin-left: 50px">แอ็คชั่น</h2>
+    </div>
+    <div class="movie-container">
+      <app-movies-card
+        *ngFor="
+          let movies of MoviesService.actionMovies;
+          let i = index;
+          let last = last
+        "
+        [movies]="movies"
+      ></app-movies-card>
+    </div>
+  </div>
+  <div class="mb-5">
+    <div class="movie-header">
+      <h2 style="font-weight: bold; margin-left: 50px">อนิเมะ</h2>
+    </div>
+    <div class="movie-container">
+      <app-movies-card
+        *ngFor="
+          let movies of MoviesService.animeMovies;
+          let i = index;
+          let last = last
+        "
+        [movies]="movies"
+      ></app-movies-card>
+    </div>
+  </div>
 </section>
