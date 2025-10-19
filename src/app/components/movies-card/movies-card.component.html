@@ -1,13 +1,17 @@
 <div class="movie-card">
-    <img [src]="movies?.posterUrl" alt="{{ movies?.title }}" class="poster">
-    <div class="movie-details">
-        <span>{{ movies?.title }}</span>
-        
-        <div class="rating">
-          <span *ngIf="movies?.rating">⭐ {{ movies?.rating }}</span>
-          <span *ngIf="movies?.rating === 0" style="color: grey;">&nbsp;No review</span>
-        </div>
+  <img [src]="movies?.posterUrl" alt="{{ movies?.title }}" class="poster" />
+  <div class="movie-details">
+    <span>{{ movies?.title }}</span>
 
-        <button class="details-btn" [routerLink]="['/movies', movies?.title]">ดูรายละเอียด</button>
-      </div>
+    <div class="rating">
+      <span *ngIf="movies?.rating">⭐ {{ movies?.rating }}</span>
+      <span *ngIf="movies?.rating === 0" style="color: grey"
+        >&nbsp;No review</span
+      >
+    </div>
+
+    <button class="details-btn" [routerLink]="['/movies', movies?.title]">
+      ดูรายละเอียด
+    </button>
+  </div>
 </div>
