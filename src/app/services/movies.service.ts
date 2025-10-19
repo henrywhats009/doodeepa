@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Movies } from '../interfaces/movies';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MoviesService {
   bannerMovies: Movies[] = [
@@ -14,72 +14,78 @@ export class MoviesService {
       ageRating: '13+',
       duration: 0,
       rating: 0,
-      posterUrl: 'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+      posterUrl:
+        'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
       trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
       genres: ['Action'],
       description: '',
       availableOn: ['none'],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
-  suggestionMovies: Movies[] = [{
-    title: 'ARCANE',
-    type: 'Movie',
-    releaseYear: 2025,
-    ageRating: '13+',
-    duration: 40,
-    rating: 9.0,
-    posterUrl: 'assets/poster/suggestion/ARCANE.png',
-    trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
-    genres: ['Action'],
-    description: '',
-    availableOn: ['Netfilx'],
-    userReviews: [],
-    id: 0
-  }, {
-    title: 'MEN In Black International',
-    type: '',
-    releaseYear: 0,
-    ageRating: '',
-    duration: 0,
-    rating: 7.3,
-    posterUrl: 'assets/poster/suggestion/MIB.png',
-    trailerUrl: '',
-    genres: [],
-    description: '',
-    availableOn: [],
-    userReviews: [],
-    id: 1
-  }, {
-    title: 'Stranger Things',
-    type: '',
-    releaseYear: 0,
-    ageRating: '',
-    duration: 0,
-    rating: 8.7,
-    posterUrl: 'assets/poster/suggestion/stanger.png',
-    trailerUrl: '',
-    genres: [],
-    description: '',
-    availableOn: [],
-    userReviews: [],
-    id: 2
-  }, {
-    title: 'The SpiderVerse',
-    type: '',
-    releaseYear: 0,
-    ageRating: '',
-    duration: 0,
-    rating: 8.6,
-    posterUrl: 'assets/poster/suggestion/spiderman.png',
-    trailerUrl: '',
-    genres: [],
-    description: '',
-    availableOn: [],
-    userReviews: [],
-    id: 3
-  }];
+  suggestionMovies: Movies[] = [
+    {
+      title: 'ARCANE',
+      type: 'Movie',
+      releaseYear: 2025,
+      ageRating: '13+',
+      duration: 40,
+      rating: 9.0,
+      posterUrl: 'assets/poster/suggestion/ARCANE.png',
+      trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
+      genres: ['Action'],
+      description: '',
+      availableOn: ['Netfilx'],
+      userReviews: [],
+      id: 0,
+    },
+    {
+      title: 'MEN In Black International',
+      type: '',
+      releaseYear: 0,
+      ageRating: '',
+      duration: 0,
+      rating: 7.3,
+      posterUrl: 'assets/poster/suggestion/MIB.png',
+      trailerUrl: '',
+      genres: [],
+      description: '',
+      availableOn: [],
+      userReviews: [],
+      id: 1,
+    },
+    {
+      title: 'Stranger Things',
+      type: '',
+      releaseYear: 0,
+      ageRating: '',
+      duration: 0,
+      rating: 8.7,
+      posterUrl: 'assets/poster/suggestion/stanger.png',
+      trailerUrl: '',
+      genres: [],
+      description: '',
+      availableOn: [],
+      userReviews: [],
+      id: 2,
+    },
+    {
+      title: 'The SpiderVerse',
+      type: '',
+      releaseYear: 0,
+      ageRating: '',
+      duration: 0,
+      rating: 8.6,
+      posterUrl: 'assets/poster/suggestion/spiderman.png',
+      trailerUrl: '',
+      genres: [],
+      description: '',
+      availableOn: [],
+      userReviews: [],
+      id: 3,
+    },
+  ];
 
   newInThisMonth: Movies[] = [
     {
@@ -90,13 +96,15 @@ export class MoviesService {
       ageRating: '13+',
       duration: 0,
       rating: 0,
-      posterUrl: 'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+      posterUrl:
+        'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
       trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
       genres: ['Action'],
       description: '',
       availableOn: ['none'],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Titanic',
       type: '',
@@ -109,8 +117,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'John Wick Chapter 4',
       type: '',
@@ -118,13 +127,15 @@ export class MoviesService {
       ageRating: '',
       duration: 0,
       rating: 7.6,
-      posterUrl: 'https://i.etsystatic.com/51729090/r/il/4a8b9b/5991845025/il_570xN.5991845025_5u87.jpg',
+      posterUrl:
+        'https://i.etsystatic.com/51729090/r/il/4a8b9b/5991845025/il_570xN.5991845025_5u87.jpg',
       trailerUrl: '',
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'KiKi Delivery Service',
       type: '',
@@ -137,8 +148,8 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
   comedyMovies: Movies[] = [
@@ -155,8 +166,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Ted',
       type: '',
@@ -169,8 +181,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Mr.Beans Holiday',
       type: '',
@@ -183,8 +196,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Scary Movie',
       type: '',
@@ -197,8 +211,8 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
   dramaMovies: Movies[] = [
@@ -215,8 +229,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Titanic',
       type: '',
@@ -229,8 +244,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Stronger',
       type: '',
@@ -243,8 +259,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'The Truman Show',
       type: '',
@@ -257,8 +274,8 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
   horrorMovies: Movies[] = [
@@ -275,8 +292,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Silent Hill',
       type: '',
@@ -289,8 +307,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'The Ring',
       type: '',
@@ -303,8 +322,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Saw',
       type: '',
@@ -317,8 +337,8 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
   actionMovies: Movies[] = [
@@ -330,13 +350,15 @@ export class MoviesService {
       ageRating: '',
       duration: 0,
       rating: 7.6,
-      posterUrl: 'https://i.etsystatic.com/51729090/r/il/4a8b9b/5991845025/il_570xN.5991845025_5u87.jpg',
+      posterUrl:
+        'https://i.etsystatic.com/51729090/r/il/4a8b9b/5991845025/il_570xN.5991845025_5u87.jpg',
       trailerUrl: '',
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Bad Boys: Ride Or Die',
       type: '',
@@ -349,8 +371,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Mad Max Fury Road',
       type: '',
@@ -363,8 +386,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Fast & Furious',
       type: '',
@@ -377,8 +401,8 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
   animeMovies: Movies[] = [
@@ -395,8 +419,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'KiKi Delivery Service',
       type: '',
@@ -409,8 +434,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'Grave of the Fireflies',
       type: '',
@@ -423,8 +449,9 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }, {
+      userReviews: [],
+    },
+    {
       id: 0,
       title: 'The Boy and The Hero',
       type: '',
@@ -437,13 +464,13 @@ export class MoviesService {
       genres: [],
       description: '',
       availableOn: [],
-      userReviews: []
-    }
+      userReviews: [],
+    },
   ];
 
   getMovieById(id: number): Movies | undefined {
-    return this.suggestionMovies.find(movies => movies.id === id);
+    return this.suggestionMovies.find((movies) => movies.id === id);
   }
 
-  constructor() { }
+  constructor() {}
 }
