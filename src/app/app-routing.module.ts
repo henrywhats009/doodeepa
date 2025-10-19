@@ -10,13 +10,13 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'movies/:title', component: MovieDetailComponent },
-  { path: 'login', component: LoginComponent},
+  { path: 'login', component: LoginComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full'},
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
