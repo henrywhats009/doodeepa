@@ -11,5 +11,9 @@ export interface Movies {
   genres: string[];
   description: string;
   availableOn: string[];
-  userReviews: { user: string; comment: string; rating: number }[];
+  userReviews: { 
+    user: string; 
+    comment: string; 
+    rating: number; 
+  }[];
 }
