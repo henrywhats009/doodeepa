@@ -1,6 +1,6 @@
 # Doodeepa
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+This project was generated using Angular CLI https://github.com/angular/angular version 19.0.1.
 
 ## 
 ```
@@ -9,4 +9,4 @@ Angular CLI does not come with  testing framework by default. You can choose one
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the Overview and Command Reference https://angular.dev/tools/cli 
+For more information on using the Angular CLI, including detailed command references, visit the Overview and Command Reference https://angular.dev/tools
