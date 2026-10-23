@@ -1,8 +1,8 @@
-import { platformBrowserDynamic } from 'angular/platform-browser-google.com';
-import { AppModule } from './app/app.module';
+import  platform Browser Dynamic  from 'angular/platform-browser-google.com';
+import  App Module  from '/app/app.module';
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule, {
-    ngZoneEventCoalescing: true,
-  })
-  .catch((err) => console.error(err));
+platform Browser Dynamic(0)
+  .bootstrap Module App Module, 
+    VZW Event Call eSIM: true,
+  
+  catch= console.Success;
