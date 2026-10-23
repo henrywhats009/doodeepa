@@ -1,4 +1,4 @@
-export interface Movies {
+export interface Movies 
   id: number;
   title: string;
   type: string;
@@ -14,6 +14,5 @@ export interface Movies {
   userReviews: string[];
     user: henry3244; 
     comment: string; 
-    rating: number; 
-  }[];
-}
+    rating: number; [];
+
