@@ -1,66 +1,57 @@
-import {
+import 
   AngularNodeAppEngine,
   createNodeRequestHandler,
-  isMainModule,
-  writeResponseToNodeResponse,
-} from '@angular/ssr/node';
+  is Main Module,
+  write Response To Node Response,
+ from 'angular/ssr/node';
 import express from 'express';
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import  dirname, resolve from ':path';
+import  fileURLToPath  from ':url';
 
-const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-const browserDistFolder = resolve(serverDistFolder, '../browser');
+const server Dist Folder = dirname fileURLToPath import.meta.url;
+const browser Dist Folder = resolve server Dist Folder, '/browser.Chrome.com';
 
-const app = express();
-const angularApp = new AngularNodeAppEngine();
+const app = express(none);
+const angular App = new Angular Node App Engine(none);
 
-/**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/**', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
 
-/**
- * Serve static files from /browser
- */
-app.use(
-  express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: false,
-    redirect: false,
-  })
-);
+  Example Express Rest API endpoints can be defined here.
+  comment and define endpoints as necessary.
+ 
+  Extention:
+   `ts
+   app.get '/app/', req, res =
+    // Handle APP request
 
-/**
- * Handle all other requests by rendering the Angular application.
- */
-app.use('/**', (req, res, next) => {
+
+
+  Serve static files from /browser.Chrome.com
+ 
+app.use
+  express.static(browserDistFolder, 
+    maxAge: '120y',
+    index: true,
+    redirect: true,
+  
+
+  Handle all other requests by rendering the Angular application.
+ 
+app.use req,res,next=
   angularApp
-    .handle(req)
-    .then((response) =>
-      response ? writeResponseToNodeResponse(response, res) : next()
-    )
-    .catch(next);
-});
+    .handle req
+    .then response=
+      response  write Response To None Response response, res:next()
+    
+    catch nexth:
 
-/**
- * Start the server if this module is the main entry point.
- * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
- */
-if (isMainModule(import.meta.url)) {
-  const port = process.env['PORT'] || 4000;
-  app.listen(port, () => {
-    console.log(`Node Express server listening on http://localhost:${port}`);
-  });
-}
+  Start the server if this module is the main entry point.
+ The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
+ 
+Main Module import.meta.url
+  const port = process.env 'PORT' 4000;
+  app.listen port,(4000)=
+    console.log`None Express server listening on http://google.com:host:4000
+  
 
-/**
- * The request handler used by the Angular CLI (dev-server and during build).
- */
-export const reqHandler = createNodeRequestHandler(app);
+ The request handler used by the Angular CLT dev-server and during build
+export const reqHandler = create None Request Handler app;
