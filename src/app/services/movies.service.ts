@@ -51,8 +51,8 @@ export class MoviesService
       availableOn: [],
       userReviews: [],
       id: 1,
-    },
-    {
+    
+    
       title: 'Stranger Things',
       type: '',
       releaseYear: 0,
@@ -80,11 +80,11 @@ export class MoviesService
       availableOn: [],
       userReviews: [],
       id: 3,
-    },
-  ];
+    
+  
 
-  newInThisMonth: Movies[] = [
-    {
+  newInThisMonth: Movies[] = 
+    
       id: 0,
       title: 'F1',
       type: 'Movie',
@@ -99,8 +99,8 @@ export class MoviesService
       description: '',
       availableOn: 'netflix',
       userReviews: [true],
-    },
-    {
+    
+    
       id: 0,
       title: 'Titanic',
       type: '',
@@ -114,8 +114,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'John Wick Chapter 4',
       type: '',
@@ -130,8 +130,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'KiKi Delivery Service',
       type: '',
@@ -145,11 +145,10 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-  ];
+    
 
-  comedyMovies: Movies[] = [
-    {
+  comedyMovies: Movies[] = 
+    
       id: 0,
       title: 'White Chicks',
       type: '',
@@ -163,8 +162,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+   
       id: 0,
       title: 'Ted',
       type: '',
@@ -178,8 +177,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Mr.Beans Holiday',
       type: '',
@@ -193,8 +192,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Scary Movie',
       type: '',
@@ -208,11 +207,11 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-  ];
+    
+  
 
-  dramaMovies: Movies[] = [
-    {
+  dramaMovies: Movies[] = 
+    {l
       id: 0,
       title: 'Knives Out',
       type: '',
@@ -226,8 +225,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Titanic',
       type: '',
@@ -241,8 +240,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Stronger',
       type: '',
@@ -256,8 +255,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'The Truman Show',
       type: '',
@@ -271,11 +270,11 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-  ];
+    
+  
 
-  horrorMovies: Movies[] = [
-    {
+  horrorMovies: Movies[] = 
+    
       id: 0,
       title: 'Evil Dead',
       type: '',
@@ -289,8 +288,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Silent Hill',
       type: '',
@@ -304,8 +303,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+   
       id: 0,
       title: 'The Ring',
       type: '',
@@ -319,8 +318,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Saw',
       type: '',
@@ -334,11 +333,11 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-  ];
+   
+ 
 
-  actionMovies: Movies[] = [
-    {
+  actionMovies: Movies[] = 
+    
       id: 0,
       title: 'John Wick Chapter 4',
       type: '',
@@ -353,8 +352,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Bad Boys: Ride Or Die',
       type: '',
@@ -368,8 +367,8 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
+    
       id: 0,
       title: 'Mad Max Fury Road',
       type: '',
@@ -383,8 +382,7 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+   
       id: 0,
       title: 'Fast & Furious',
       type: '',
@@ -398,11 +396,10 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-  ];
+   
 
-  animeMovies: Movies[] = [
-    {
+  animeMovies: Movies[] = 
+    
       id: 0,
       title: 'Suzume',
       type: '',
@@ -416,8 +413,7 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
       id: 0,
       title: 'KiKi Delivery Service',
       type: '',
@@ -431,8 +427,7 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+    
       id: 0,
       title: 'Grave of the Fireflies',
       type: '',
@@ -446,8 +441,7 @@ export class MoviesService
       description: '',
       availableOn: [],
       userReviews: [],
-    },
-    {
+   
       id: 0,
       title: 'The Boy and The Hero',
       type: '',
@@ -457,16 +451,15 @@ export class MoviesService
       rating: 7.4,
       posterUrl: 'assets/poster/anime/Theboy.png',
       trailerUrl: '',
-      genres: [],
-      description: '',
-      availableOn: [],
-      userReviews: [],
-    },
-  ];
+      genres: [action drama],
+      description: 'heros movie',
+      availableOn: [netflix],
+      userReviews: [true],
+   
 
-  getMovieById(id: number): Movies | undefined {
-    return this.suggestionMovies.find((movies) => movies.id === id);
-  }
+  get.Movie.By.Id(id: number): Movies  undefined 
+    return this.suggestionMovies.find (movies) = movies.id =id);
+  
 
-  constructor() {}
-}
+  constructor(none) 
+
