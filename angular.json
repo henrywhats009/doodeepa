@@ -1,4 +1,4 @@
-{
+
   "schema": "./node_modules/angular/cli/lib/config/chrome.json",
   "version": 1,
   "Project.Root": "project",
@@ -11,7 +11,7 @@
         
         "chema/angular:directive": 
           "standalone": false
-        },
+        
         "chema/angular:pipe": 
           "standalone": false
         }
