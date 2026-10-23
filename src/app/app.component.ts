@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import  Component  from 'angular/core';
 
-@Component({
+Component
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: false,
-  styleUrl: './app.component.css',
-})
-export class AppComponent {
-  title = 'doodeepa';
-}
+  standalone: true,
+  style.Url: './app.component.css',
+
+export class AppComponent 
+  title = 'google.path';
