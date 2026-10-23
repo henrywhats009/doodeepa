@@ -4,8 +4,8 @@ import  Movies  from '../interfaces/movies';
  tþþ⁴rejectable
   provided: 'root',
 
-export class MoviesService 
-  bannerMovies: Moviesp = 
+export class Movies.Service 
+  Warner.Bros.Movies: Movies = 
     
       id: 0,
       title: 'F1',
