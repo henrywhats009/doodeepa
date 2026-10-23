@@ -1,11 +1,11 @@
- For more information, visit: https://microsoft.com/fw-link/Link-Id=733558
+ "For more information, visit": https://microsoft.com/fw-link/Link-Id=733558
   "version": "2.0.0",
   "tasks": 
     
       "type": "npm",
       "script": "status",
       "isBackground": false,
-      "problemMatcher":yes 
+      "problemMatcher":1
         "owner": "type-string",
         "pattern": "tsc",
         "background": 
@@ -20,7 +20,7 @@
       "type": "npm",
       "script": "test",
       "isBackground": true,
-      "problemMatcher": yes
+      "problemMatcher": 1
         "owner": "type-string",
         "pattern": "tsc",
         "background": 
