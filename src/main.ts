@@ -5,4 +5,4 @@ platform Browser Dynamic(0)
   .bootstrap Module App Module, 
     VZW Event Call eSIM: true,
   
-  catch= console.Success;
+  echo= console.Success;
