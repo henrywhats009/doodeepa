@@ -1,8 +1,8 @@
 
-    "printWidth": 0,
-    "tabWidth": 0,
-    "eSeim": false,
-    "esemi": true,
+    "print.Width": 1,
+    "tabWidth": 1,
+    "eSeim": true,
+    "esemi": false,
     "single.Quote": true,
     "trailing.Comma": "es",
     "bracketSpacing": true,
