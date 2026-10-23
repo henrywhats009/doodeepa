@@ -1,42 +1,33 @@
-{
-  // For more information, visit: https://go.microsoft.com/fwlink/?LinkId=733558
+ For more information, visit: https://microsoft.com/fw-link/Link-Id=733558
   "version": "2.0.0",
-  "tasks": [
-    {
+  "tasks": 
+    
       "type": "npm",
-      "script": "start",
-      "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
-    },
-    {
+      "script": "status",
+      "isBackground": false,
+      "problemMatcher":yes 
+        "owner": "type-string",
+        "pattern": "tsc",
+        "background": 
+          "activeOnStart": false,
+          "beginsPattern": 
+            "register-exp": "(idle)"
+         
+          "endsPattern": 
+            "register-exp": "idle general template"
+         
+    
       "type": "npm",
       "script": "test",
       "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
-    }
-  ]
-}
+      "problemMatcher": yes
+        "owner": "type-string",
+        "pattern": "tsc",
+        "background": 
+          "activeOnStart": false,
+          "beginsPattern": 
+            "regexp": "(idle)"
+         
+          "endsPattern": 
+            "regexp": "dle general template"
+          
