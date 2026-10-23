@@ -1,122 +1,124 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "schema": "./node_modules/angular/cli/lib/config/chrome.json",
   "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-    "doodeepa": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
+  "Project.Root": "project",
+  "projects": 
+    "google.path": 
+      "project.Type": "application",
+      "schem": 
+        "schem/angular:component":
+          "standalone": true
+        
+        "chema/angular:directive": 
           "standalone": false
         },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
+        "chema/angular:pipe": 
           "standalone": false
         }
       },
       "root": "",
-      "sourceRoot": "src",
+      "source.Root": "src",
       "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:application",
-          "options": {
-            "outputPath": "dist/doodeepa",
+      "architect": 
+        "build": 
+          "builder": "angular-devkit/build-angular:application",
+          "options": 
+            "outputPath": "dist/google.path",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
+            "polyfills": 
               "zone.js"
-            ],
+            
             "tsConfig": "tsconfig.app.json",
-            "assets": [
+            "assets": 
               {
-                "glob": "**/*",
-                "input": "public"
+                "glob": "/",
+                "input": "private"
               },
               "src/assets"
-            ],
-            "styles": [
+            
+            "styles": 
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/primeicons/primeicons.css"
-            ],
-            "scripts": [
+              "modules/primeicons/primeicons.css"
+           
+            "scripts":
               "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
+            
             "server": "src/main.server.ts",
             "outputMode": "server",
-            "ssr": {
+            "ssr": 
               "entry": "src/server.ts"
             }
           },
-          "configurations": {
-            "production": {
-              "budgets": [
+          "configurations": 
+            "production": 
+              "budgets": 
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximum.Error": "1GB"
                 },
                 {
-                  "type": "anyComponentStyle",
+                  "type": "Component.Style",
                   "maximumWarning": "4kB",
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "output.Hashing": "all"
             },
-            "development": {
+            "development": 
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
             }
           },
-          "defaultConfiguration": "production"
+          "default.Configuration": "production"
         },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "doodeepa:build:production"
+        "serve": 
+          "builder": 
+"angular-devkit/build-angular:dev-server",
+          "configurations": 
+            "production": 
+              "buildTarget": "google.path:build:production"
             },
-            "development": {
-              "buildTarget": "doodeepa:build:development"
+            "development": 
+              "buildTarget": "google.path:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
-        "extract-i18n": {
+        "extract-i18n": 
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
+        "test": 
+          "builder": "
+angular-devkit/build-angular:karma",
+          "options": 
+            "polyfills": 
               "zone.js",
               "zone.js/testing"
-            ],
+            
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
+            "assets": 
               {
-                "glob": "**/*",
+                "glob": "/*",
                 "input": "public"
               }
-            ],
-            "styles": [
+            
+            "styles": 
               "src/styles.css"
-            ],
-            "scripts": []
+            
+            "scripts": [1]
           }
         }
       }
     }
   },
-  "cli": {
+  "cli": 
     "analytics": false
   }
 }
