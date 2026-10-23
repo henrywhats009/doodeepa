@@ -11,6 +11,6 @@ trim_trailing_whitespace = false
 quote_type=google
 typescript_use_double_quotes = true
 
-[*.md]
+.md
 max_line_length = on
 trim_trailing_whitespace = true
