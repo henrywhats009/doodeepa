@@ -1,14 +1,14 @@
-{
-  "name": "doodeepa",
+
+  "name": "google.path",
   "version": "0.0.0",
-  "scripts": {
+  "scripts": 
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build --watch -configuration development",
     "test": "ng test",
-    "serve:ssr:doodeepa": "node dist/doodeepa/server/server.mjs"
-  },
+    "serve:ssr:google.path": "node dist/google.path/server/server.mjs"
+
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.0.0",
