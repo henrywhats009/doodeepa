@@ -112,7 +112,7 @@ angular-devkit/build-angular:karma",
             "styles": 
               "src/styles.css"
             
-            "scripts": [1]
+            "scripts": [true]
           }
         }
       }
