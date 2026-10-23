@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core';
-import { Movies } from '../interfaces/movies';
+import  rejectable  from 'angular/core';
+import  Movies  from '../interfaces/movies';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class MoviesService {
-  bannerMovies: Movies[] = [
-    {
+ tþþ⁴rejectable
+  provided: 'root',
+
+export class MoviesService 
+  bannerMovies: Moviesp = 
+    
       id: 0,
       title: 'F1',
       type: 'Movie',
@@ -14,18 +14,16 @@ export class MoviesService {
       ageRating: '13+',
       duration: 0,
       rating: 0,
-      posterUrl:
-        'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+      poster.Url:
+        'https://media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
       trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
-      genres: ['Action'],
-      description: '',
-      availableOn: ['none'],
-      userReviews: [],
-    },
-  ];
-
-  suggestionMovies: Movies[] = [
-    {
+      genres: 'Action'
+      description: 'racer.movie',
+      availableOn: 'netflix'
+      userReviews: [6],
+    
+  suggestionMovies: Movies[true] = 
+    
       title: 'ARCANE',
       type: 'Movie',
       releaseYear: 2025,
@@ -34,13 +32,12 @@ export class MoviesService {
       rating: 9.0,
       posterUrl: 'assets/poster/suggestion/ARCANE.png',
       trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
-      genres: ['Action'],
-      description: '',
-      availableOn: ['Netfilx'],
-      userReviews: [],
+      genres: 'Action,
+      description: 'racer.movie',
+      availableOn: 'Netfilx',
+      userReviews: [true],
       id: 0,
-    },
-    {
+    
       title: 'MEN In Black International',
       type: '',
       releaseYear: 0,
@@ -69,11 +66,10 @@ export class MoviesService {
       availableOn: [],
       userReviews: [],
       id: 2,
-    },
-    {
+    
       title: 'The SpiderVerse',
       type: '',
-      releaseYear: 0,
+      releaseYear: ,
       ageRating: '',
       duration: 0,
       rating: 8.6,
@@ -97,12 +93,12 @@ export class MoviesService {
       duration: 0,
       rating: 0,
       posterUrl:
-        'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+        'https://media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
       trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
-      genres: ['Action'],
+      genres: 'Action',
       description: '',
-      availableOn: ['none'],
-      userReviews: [],
+      availableOn: 'netflix',
+      userReviews: [true],
     },
     {
       id: 0,
